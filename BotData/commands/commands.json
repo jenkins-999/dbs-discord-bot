@@ -9,14 +9,19 @@
           "type": "Send Embed",
           "fields": [
             {
-              "name": ".info",
+              "name": "Info",
               "value": "Shows info",
-              "inline": "true"
+              "inline": "false"
             },
             {
-              "name": ".invite",
+              "name": "Invite",
               "value": "This will give you an Invite Link",
-              "inline": "true"
+              "inline": "false"
+            },
+            {
+              "name": "Minigames",
+              "value": "Play a simple games",
+              "inline": "false"
             }
           ],
           "channelname": "${dbsVars.CommandChannel.id}",
@@ -26,7 +31,7 @@
           "authorname": "Server Bot",
           "authorimageurl": "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
           "authorlink": "",
-          "description": "Work in progress..",
+          "description": "Work in progress..\nUse '.' to use the commands",
           "thumbnail": "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
           "image": "",
           "footer": "",
@@ -43,8 +48,8 @@
           "name": "show info",
           "category": "Message",
           "type": "Send Message",
-          "channelname": "${dbsVars.DefaultChannel.id}",
-          "messagetext": "Command Author: ${dbsVars.CommandAuthor.displayName}\nTagged author: <@${dbsVars.CommandAuthor.id}>\n",
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "messagetext": "My Creator: ${dbsVars.CommandAuthor.user.tag}\n",
           "savetovariable": "",
           "savetovariabletype": "temp"
         }
@@ -121,8 +126,336 @@
       ]
     },
     {
-      "name": "dice",
-      "actions": []
+      "name": "deposit",
+      "actions": [
+        {
+          "name": "deposit amount",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "varname": "deposit",
+          "vartype": "Number",
+          "savevartype": "temp",
+          "param": "1"
+        },
+        {
+          "name": "check deposit = wallet",
+          "category": "User Data",
+          "type": "Check User Data",
+          "trueActions": [
+            {
+              "name": "no correct deposit",
+              "category": "Message",
+              "type": "Send Embed",
+              "channelname": "${dbsVars.CommandChannel.id}",
+              "color": "FF0000",
+              "title": "Deposit",
+              "url": "",
+              "authorname": "Minigames",
+              "authorimageurl": "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
+              "authorlink": "",
+              "description": "Gak bisa deposit karena uang kamu gak cukup ",
+              "thumbnail": "",
+              "image": "",
+              "footer": "requested by ${dbsVars.CommandAuthor.user.tag}",
+              "timestamp": "BOOL_TRUE@@",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            }
+          ],
+          "falseActions": [
+            {
+              "name": "-wallet",
+              "category": "User Data",
+              "type": "Edit User Data",
+              "user": "${dbsVars.CommandAuthor.id}",
+              "field": "wallet",
+              "oper": "-",
+              "value": "${tempVars.deposit}"
+            },
+            {
+              "name": "+bank",
+              "category": "User Data",
+              "type": "Edit User Data",
+              "user": "${dbsVars.CommandAuthor.id}",
+              "field": "bank",
+              "oper": "+",
+              "value": "${tempVars.deposit}"
+            },
+            {
+              "name": "correct deposit",
+              "category": "Message",
+              "type": "Send Embed",
+              "channelname": "${dbsVars.CommandChannel.id}",
+              "color": "04FF00",
+              "title": "Deposit",
+              "url": "",
+              "authorname": "Minigames",
+              "authorimageurl": "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
+              "authorlink": "",
+              "description": ":dollar: | Kamu menyimpan sebanyak \n$ ${tempVars.deposit}",
+              "thumbnail": "",
+              "image": "",
+              "footer": "requested by ${dbsVars.CommandAuthor.user.tag}",
+              "timestamp": "BOOL_TRUE@@",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            }
+          ],
+          "user": "${dbsVars.CommandAuthor.id}",
+          "field": "wallet",
+          "compare": "less than",
+          "value": "${tempVars.deposit}"
+        }
+      ]
+    },
+    {
+      "name": "wallet",
+      "actions": [
+        {
+          "name": "wallet data",
+          "category": "User Data",
+          "type": "Get User Data",
+          "user": "${dbsVars.CommandAuthor.id}",
+          "field": "wallet",
+          "varname": "wallet",
+          "savevartype": "temp",
+          "vartype": "User"
+        },
+        {
+          "name": "wallet coins",
+          "category": "Message",
+          "type": "Send Embed",
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "00FF15",
+          "title": "Wallet Info",
+          "url": "",
+          "authorname": "Minigames",
+          "authorimageurl": "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
+          "authorlink": "",
+          "description": ":dollar: | Kamu memiliki uang sebanyak $ ${tempVars.wallet}",
+          "thumbnail": "",
+          "image": "",
+          "footer": "requested by${dbsVars.CommandAuthor.id}",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "work",
+      "actions": [
+        {
+          "name": "generate-money",
+          "category": "Variable",
+          "type": "Generate Random Number",
+          "varname": "generate",
+          "min": "1",
+          "max": "900",
+          "savevartype": "temp"
+        },
+        {
+          "name": "edit-currency",
+          "category": "User Data",
+          "type": "Edit User Data",
+          "user": "${dbsVars.CommandAuthor.id}",
+          "field": "wallet",
+          "oper": "+",
+          "value": "${tempVars.generate}"
+        },
+        {
+          "name": "correct work",
+          "category": "Message",
+          "type": "Send Embed",
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "2FFF00",
+          "title": "Work",
+          "url": "",
+          "authorname": "Minigames",
+          "authorimageurl": "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
+          "authorlink": "",
+          "description": ":dollar: | Kamu selesai kerja dan dibayar sebesar $ ${tempVars.generate} !",
+          "thumbnail": "",
+          "image": "",
+          "footer": "requested by ${dbsVars.CommandAuthor.id}",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "withdraw",
+      "actions": [
+        {
+          "name": "withdraw ammount",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "varname": "withdraw",
+          "vartype": "Number",
+          "savevartype": "temp",
+          "param": "1"
+        },
+        {
+          "name": "check withdraw",
+          "category": "User Data",
+          "type": "Check User Data",
+          "trueActions": [
+            {
+              "name": "no correct withdraw",
+              "category": "Message",
+              "type": "Send Embed",
+              "channelname": "${dbsVars.CommandChannel.id}",
+              "color": "FF0000",
+              "title": "Withdraw",
+              "url": "",
+              "authorname": "Minigames",
+              "authorimageurl": "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
+              "authorlink": "",
+              "description": ":dollar: | Kamu gak bisa menarik lebih banyak uang daripada yang kamu punya",
+              "thumbnail": "",
+              "image": "",
+              "footer": "requested by ${dbsVars.CommandAuthor.user.tag}",
+              "timestamp": "BOOL_TRUE@@",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            }
+          ],
+          "falseActions": [
+            {
+              "name": "-bank",
+              "category": "User Data",
+              "type": "Edit User Data",
+              "user": "${dbsVars.CommandAuthor.id}",
+              "field": "bank",
+              "oper": "-",
+              "value": "${tempVars.withdraw}"
+            },
+            {
+              "name": "+wallet",
+              "category": "User Data",
+              "type": "Edit User Data",
+              "user": "${dbsVars.CommandAuthor.id}",
+              "field": "wallet",
+              "oper": "+",
+              "value": "${tempVars.withdraw}"
+            },
+            {
+              "name": "correct withdraw",
+              "category": "Message",
+              "type": "Send Embed",
+              "channelname": "${dbsVars.CommandChannel.id}",
+              "color": "6AFF00",
+              "title": "Withdraw",
+              "url": "",
+              "authorname": "Minigames",
+              "authorimageurl": "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
+              "authorlink": "",
+              "description": ":dollar: | Kamu menarik uang sebesar ${tempVars.withdraw} dari Bank",
+              "thumbnail": "",
+              "image": "",
+              "footer": "requested by ${dbsVars.CommandAuthor.id}",
+              "timestamp": "BOOL_TRUE@@",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            }
+          ],
+          "user": "${dbsVars.CommandAuthor.id}",
+          "field": "bank",
+          "compare": "greater than",
+          "value": "${tempVars.withdraw}"
+        }
+      ]
+    },
+    {
+      "name": "bal",
+      "actions": [
+        {
+          "name": "get user data",
+          "category": "User Data",
+          "type": "Get User Data",
+          "user": "${dbsVars.CommandAuthor.id}",
+          "field": "wallet",
+          "varname": "wallet",
+          "savevartype": "temp",
+          "vartype": "User"
+        },
+        {
+          "name": "bank data",
+          "category": "User Data",
+          "type": "Get User Data",
+          "user": "${dbsVars.CommandAuthor.id}",
+          "field": "bank",
+          "varname": "bank",
+          "savevartype": "temp",
+          "vartype": "User"
+        },
+        {
+          "name": "balance",
+          "category": "Message",
+          "type": "Send Embed",
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "00FF37",
+          "title": "Your Balance",
+          "url": "",
+          "authorname": "Minigames",
+          "authorimageurl": "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
+          "authorlink": "",
+          "description": "__Wallet__\n:dollar: | $ ${tempVars.wallet}\n\n__Bank__\n:dollar: | $ ${tempVars.bank}",
+          "thumbnail": "",
+          "image": "",
+          "footer": "requested by ${dbsVars.CommandAuthor.user.tag}",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "minigames",
+      "actions": [
+        {
+          "name": "minigames info",
+          "category": "Message",
+          "type": "Send Embed",
+          "fields": [
+            {
+              "name": "work",
+              "value": "Kerja boi biar dapet duit",
+              "inline": "false"
+            },
+            {
+              "name": "bal",
+              "value": "Melihat jumlah uang yang tersimpan di dompet dan bank.",
+              "inline": "false"
+            },
+            {
+              "name": "deposit",
+              "value": "Setor uang ke Bank",
+              "inline": "false"
+            },
+            {
+              "name": "withdraw",
+              "value": "Tarik uang ",
+              "inline": "false"
+            }
+          ],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "FFD500",
+          "title": "Minigames Info",
+          "url": "",
+          "authorname": "do you wan some chikin",
+          "authorimageurl": "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
+          "authorlink": "",
+          "description": "Permainannya simple kalian kerja abis itu digaji\nUse ' . ' to use the commands",
+          "thumbnail": "",
+          "image": "",
+          "footer": "requested by ${dbsVars.CommandAuthor.user.tag}",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
     }
   ]
 }
