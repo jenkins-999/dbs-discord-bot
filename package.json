@@ -1,0 +1,20 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "better-discord-antispam": "^1.0.6",
+    "discord-anti-spam": "^2.3.5",
+    "express": "^4.17.1",
+    "flatted": "^3.0.2",
+    "winston": "^3.2.1",
+    "discord.js": "^11.5.1",
+    "papaparse": "^5.2.0"
+  }
+}

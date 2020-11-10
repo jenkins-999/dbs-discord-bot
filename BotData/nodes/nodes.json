@@ -1,0 +1,448 @@
+{
+  "nodes": [
+    {
+      "type": "command",
+      "name": "help",
+      "guid": "7942fe4c-dffa-4146-8cab-d254b3d80d5d",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "37eda463-a170-44f9-af54-61378ffc9294"
+          ]
+        }
+      ],
+      "x": 132,
+      "y": 137
+    },
+    {
+      "type": "command",
+      "name": "info",
+      "guid": "2224944a-561a-4fa1-824b-2f31ea37c836",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "5053a44d-4a5e-460a-974d-da0cc07aac7c"
+          ]
+        }
+      ],
+      "x": 149,
+      "y": 325
+    },
+    {
+      "type": "response",
+      "name": "help menu",
+      "guid": "37eda463-a170-44f9-af54-61378ffc9294",
+      "reactionFields": [],
+      "embedfields": [
+        {
+          "name": ".info",
+          "value": "Shows info",
+          "inline": "true"
+        },
+        {
+          "name": ".invite",
+          "value": "This will give you an Invite Link",
+          "inline": "true"
+        }
+      ],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "7942fe4c-dffa-4146-8cab-d254b3d80d5d"
+        }
+      ],
+      "x": 363,
+      "y": 136,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "1FFF57",
+        "Help Menu",
+        "",
+        "Server Bot",
+        "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
+        "",
+        "Work in progress..",
+        "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
+        "",
+        "",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "show info",
+      "guid": "5053a44d-4a5e-460a-974d-da0cc07aac7c",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "2224944a-561a-4fa1-824b-2f31ea37c836"
+        }
+      ],
+      "x": 370,
+      "y": 296,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "${dbsVars.DefaultChannel.id}",
+        "Command Author: ${dbsVars.CommandAuthor.displayName}\nTagged author: <@${dbsVars.CommandAuthor.id}>\n",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "say",
+      "guid": "46c1335d-e460-445e-9642-77c6e75a11b5",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "23f96e55-cd6b-4098-b100-f42ee231b38c"
+          ]
+        }
+      ],
+      "x": 152,
+      "y": 449,
+      "perms": []
+    },
+    {
+      "type": "response",
+      "name": "say message store",
+      "guid": "23f96e55-cd6b-4098-b100-f42ee231b38c",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "saidmessage",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "d6f9d55b-5bd2-4d85-8a14-e4c77a0054bd"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "46c1335d-e460-445e-9642-77c6e75a11b5"
+        }
+      ],
+      "x": 390,
+      "y": 452,
+      "rtype": "Variable",
+      "rsubtype": "Store Value in Variable",
+      "formdata": [
+        "saidmessage",
+        "Text",
+        "temp",
+        "0"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType",
+        "param"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "bot says message",
+      "guid": "d6f9d55b-5bd2-4d85-8a14-e4c77a0054bd",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "23f96e55-cd6b-4098-b100-f42ee231b38c"
+        }
+      ],
+      "x": 623,
+      "y": 460,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "general-chat",
+        "${tempVars.saidmessage}",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "invite",
+      "guid": "6293fb1f-c21a-4cba-a802-0faff378c43f",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "42571309-554f-4355-8be8-1de749098b5e"
+          ]
+        }
+      ],
+      "x": 140,
+      "y": 617
+    },
+    {
+      "type": "response",
+      "name": "send invite link",
+      "guid": "cf2c7432-10e9-4dcb-a38d-72a7a962a889",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "42571309-554f-4355-8be8-1de749098b5e"
+        }
+      ],
+      "x": 624,
+      "y": 627,
+      "rtype": "Message",
+      "rsubtype": "Inv Link",
+      "formdata": [
+        "476039855441313794",
+        "8",
+        "https://discord.gg/XtKChbF"
+      ],
+      "formnames": [
+        "clientid",
+        "permInt",
+        "msgText"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "dnd",
+      "guid": "487adaf6-ae97-4806-9e03-2af9da03cbc8",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "a548fb88-d1b3-4d13-8f6a-13876e104446"
+          ]
+        }
+      ],
+      "x": 143,
+      "y": 778,
+      "perms": []
+    },
+    {
+      "type": "response",
+      "name": "set bot stataus",
+      "guid": "a548fb88-d1b3-4d13-8f6a-13876e104446",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "487adaf6-ae97-4806-9e03-2af9da03cbc8"
+        }
+      ],
+      "x": 379,
+      "y": 748,
+      "rtype": "Bot Action",
+      "rsubtype": "Set Status",
+      "formdata": [
+        "DnD"
+      ],
+      "formnames": [
+        "status"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "more status",
+      "guid": "9b9bc8cc-c51f-4ed5-84c8-69515c55f0d5",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "620e7e0c-2cc4-4dad-bbc6-ae15eae1f21f"
+        }
+      ],
+      "x": 449,
+      "y": 935,
+      "rtype": "Bot Action",
+      "rsubtype": "More Status",
+      "formdata": [
+        "LISTENING",
+        "do you wan some chikin"
+      ],
+      "formnames": [
+        "statusOption",
+        "statusText"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "status",
+      "guid": "620e7e0c-2cc4-4dad-bbc6-ae15eae1f21f",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "9b9bc8cc-c51f-4ed5-84c8-69515c55f0d5"
+          ]
+        }
+      ],
+      "x": 147,
+      "y": 888,
+      "perms": []
+    },
+    {
+      "type": "response",
+      "name": "mention",
+      "guid": "42571309-554f-4355-8be8-1de749098b5e",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "cf2c7432-10e9-4dcb-a38d-72a7a962a889"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "6293fb1f-c21a-4cba-a802-0faff378c43f"
+        }
+      ],
+      "x": 378,
+      "y": 614,
+      "rtype": "Variable",
+      "rsubtype": "Get Mentioned User",
+      "formdata": [
+        "user",
+        "User",
+        "temp"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "game1",
+      "guid": "47ea4234-8f68-4dd7-b9d2-7eaaae1864c8",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": []
+        }
+      ],
+      "x": 643,
+      "y": 787,
+      "rtype": "Bot Action",
+      "rsubtype": "Set Bot Game",
+      "formdata": [
+        "dice"
+      ],
+      "formnames": [
+        "game"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "dice",
+      "guid": "9584338a-b89e-4169-be27-59a358b92a05",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "x": 250,
+      "y": 750
+    }
+  ]
+}

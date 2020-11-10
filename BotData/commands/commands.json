@@ -1,0 +1,128 @@
+{
+  "command": [
+    {
+      "name": "help",
+      "actions": [
+        {
+          "name": "help menu",
+          "category": "Message",
+          "type": "Send Embed",
+          "fields": [
+            {
+              "name": ".info",
+              "value": "Shows info",
+              "inline": "true"
+            },
+            {
+              "name": ".invite",
+              "value": "This will give you an Invite Link",
+              "inline": "true"
+            }
+          ],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "1FFF57",
+          "title": "Help Menu",
+          "url": "",
+          "authorname": "Server Bot",
+          "authorimageurl": "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
+          "authorlink": "",
+          "description": "Work in progress..",
+          "thumbnail": "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
+          "image": "",
+          "footer": "",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "info",
+      "actions": [
+        {
+          "name": "show info",
+          "category": "Message",
+          "type": "Send Message",
+          "channelname": "${dbsVars.DefaultChannel.id}",
+          "messagetext": "Command Author: ${dbsVars.CommandAuthor.displayName}\nTagged author: <@${dbsVars.CommandAuthor.id}>\n",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "say",
+      "perms": [],
+      "actions": [
+        {
+          "name": "say message store",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "varname": "saidmessage",
+          "vartype": "Text",
+          "savevartype": "temp",
+          "param": "0"
+        },
+        {
+          "name": "bot says message",
+          "category": "Message",
+          "type": "Send Message",
+          "channelname": "general-chat",
+          "messagetext": "${tempVars.saidmessage}",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "invite",
+      "actions": [
+        {
+          "name": "mention",
+          "category": "Variable",
+          "type": "Get Mentioned User",
+          "varname": "user",
+          "vartype": "User",
+          "savevartype": "temp"
+        },
+        {
+          "name": "send invite link",
+          "category": "Message",
+          "type": "Inv Link",
+          "clientid": "476039855441313794",
+          "permint": "8",
+          "msgtext": "https://discord.gg/XtKChbF"
+        }
+      ]
+    },
+    {
+      "name": "dnd",
+      "perms": [],
+      "actions": [
+        {
+          "name": "set bot stataus",
+          "category": "Bot Action",
+          "type": "Set Status",
+          "status": "DnD"
+        }
+      ]
+    },
+    {
+      "name": "status",
+      "perms": [],
+      "actions": [
+        {
+          "name": "more status",
+          "category": "Bot Action",
+          "type": "More Status",
+          "statusoption": "LISTENING",
+          "statustext": "do you wan some chikin"
+        }
+      ]
+    },
+    {
+      "name": "dice",
+      "actions": []
+    }
+  ]
+}
