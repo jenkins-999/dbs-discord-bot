@@ -10,7 +10,7 @@
           "fields": [
             {
               "name": "Info",
-              "value": "Shows info",
+              "value": "Shows bot info",
               "inline": "false"
             },
             {
@@ -21,6 +21,11 @@
             {
               "name": "Minigames",
               "value": "Play a simple games",
+              "inline": "false"
+            },
+            {
+              "name": "userinfo",
+              "value": "Shows your chatting level and xp",
               "inline": "false"
             }
           ],
@@ -264,98 +269,23 @@
           "value": "${tempVars.generate}"
         },
         {
-          "name": "Check",
-          "category": "User Data",
-          "type": "Check User Data",
-          "trueActions": [
-            {
-              "name": "correct work",
-              "category": "Message",
-              "type": "Send Embed",
-              "channelname": "${dbsVars.CommandChannel.id}",
-              "color": "2FFF00",
-              "title": "Work",
-              "url": "",
-              "authorname": "Minigames",
-              "authorimageurl": "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
-              "authorlink": "",
-              "description": ":dollar: | Kamu selesai kerja dan dibayar sebesar Rp ${tempVars.generate} !",
-              "thumbnail": "",
-              "image": "",
-              "footer": "requested by ${dbsVars.CommandAuthor.user.tag}",
-              "timestamp": "BOOL_TRUE@@",
-              "savetovariable": "",
-              "savetovariabletype": "temp"
-            },
-            {
-              "name": "setbalancefalse",
-              "category": "User Data",
-              "type": "Set User Data",
-              "user": "${dbsVars.CommandAuthor.id}",
-              "field": "cooldown",
-              "fieldvalue": "1"
-            },
-            {
-              "name": "wait",
-              "category": "Bot Action",
-              "type": "Edited Wait",
-              "seconds": "3"
-            },
-            {
-              "name": "setbalancefalse_1",
-              "category": "User Data",
-              "type": "Set User Data",
-              "user": "${dbsVars.CommandAuthor.id}",
-              "field": "cooldown",
-              "fieldvalue": "0"
-            }
-          ],
-          "falseActions": [
-            {
-              "name": "Check_1",
-              "category": "User Data",
-              "type": "Check User Data",
-              "trueActions": [
-                {
-                  "name": "balance_1_1",
-                  "category": "Message",
-                  "type": "Send Embed",
-                  "channelname": "${dbsVars.CommandChannel.id}",
-                  "color": "00FF37",
-                  "title": "Cooldown",
-                  "url": "",
-                  "authorname": "Minigames",
-                  "authorimageurl": "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
-                  "authorlink": "",
-                  "description": "3 seconds cooldown",
-                  "thumbnail": "",
-                  "image": "",
-                  "footer": "requested by ${dbsVars.CommandAuthor.user.tag}",
-                  "timestamp": "BOOL_TRUE@@",
-                  "savetovariable": "",
-                  "savetovariabletype": "temp"
-                }
-              ],
-              "falseActions": [
-                {
-                  "name": "setbalancefalse_1_1",
-                  "category": "User Data",
-                  "type": "Set User Data",
-                  "user": "${dbsVars.CommandAuthor.id}",
-                  "field": "cooldown",
-                  "fieldvalue": "0"
-                }
-              ],
-              "user": "${dbsVars.CommandAuthor.id}",
-              "field": "cooldown",
-              "compare": "equal to",
-              "value": "1"
-            }
-          ],
-          "user": "${dbsVars.CommandAuthor.id}",
-          "field": "cooldown",
-          "compare": "equal to",
-          "value": "0"
+          "name": "correct work",
+          "category": "Message",
+          "type": "Send Embed",
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "2FFF00",
+          "title": "Work",
+          "url": "",
+          "authorname": "Minigames",
+          "authorimageurl": "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
+          "authorlink": "",
+          "description": ":dollar: | Kamu selesai kerja dan dibayar sebesar Rp ${tempVars.generate} !",
+          "thumbnail": "",
+          "image": "",
+          "footer": "requested by ${dbsVars.CommandAuthor.user.tag}",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
         }
       ]
     },
@@ -805,6 +735,50 @@
           "savevartype": "temp",
           "compare": "equal to",
           "value": "wallet"
+        }
+      ]
+    },
+    {
+      "name": "userinfo",
+      "actions": [
+        {
+          "name": "get xp",
+          "category": "User Data",
+          "type": "Get User Data",
+          "user": "${dbsVars.CommandAuthor.id}",
+          "field": "xp",
+          "varname": "xp",
+          "savevartype": "temp",
+          "vartype": "User"
+        },
+        {
+          "name": "get xp_1",
+          "category": "User Data",
+          "type": "Get User Data",
+          "user": "${dbsVars.CommandAuthor.id}",
+          "field": "lvl",
+          "varname": "lvl",
+          "savevartype": "temp",
+          "vartype": "User"
+        },
+        {
+          "name": "sendlvl",
+          "category": "Message",
+          "type": "Send Embed",
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "08FFF5",
+          "title": "Chatting Skills",
+          "url": "",
+          "authorname": "do you want some chikin",
+          "authorimageurl": "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
+          "authorlink": "",
+          "description": "Level: ${tempVars.lvl}\nXP: ${tempVars.xp}/100",
+          "thumbnail": "",
+          "image": "",
+          "footer": "requested by ${dbsVars.CommandAuthor.user.tag}",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
         }
       ]
     }

@@ -38,7 +38,7 @@
       "embedfields": [
         {
           "name": "Info",
-          "value": "Shows info",
+          "value": "Shows bot info",
           "inline": "false"
         },
         {
@@ -50,8 +50,15 @@
           "name": "Minigames",
           "value": "Play a simple games",
           "inline": "false"
+        },
+        {
+          "name": "userinfo",
+          "value": "Shows your chatting level and xp",
+          "inline": "false"
         }
       ],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
       "outputs": [
         {
           "label": "next response",
@@ -805,8 +812,8 @@
           ]
         }
       ],
-      "x": 1391,
-      "y": 262
+      "x": 1511,
+      "y": 194
     },
     {
       "type": "response",
@@ -1148,8 +1155,8 @@
           "id": "761044e0-18a8-40c2-aeea-792e5b74b768"
         }
       ],
-      "x": 1546,
-      "y": 136,
+      "x": 1672,
+      "y": 167,
       "rtype": "Variable",
       "rsubtype": "Generate Random Number",
       "formdata": [
@@ -1175,7 +1182,7 @@
         {
           "label": "next response",
           "connections": [
-            "062e52a9-eddd-44fe-a3c5-b16c195fb4d7"
+            "8d6f782f-f981-4415-9a9f-e65a23733597"
           ]
         }
       ],
@@ -1185,8 +1192,8 @@
           "id": "f07e6a3d-0206-4029-a9b3-7715bd9f39d1"
         }
       ],
-      "x": 1546,
-      "y": 271,
+      "x": 1831,
+      "y": 170,
       "rtype": "User Data",
       "rsubtype": "Edit User Data",
       "formdata": [
@@ -1211,19 +1218,17 @@
       "outputs": [
         {
           "label": "next response",
-          "connections": [
-            "f2d61da3-c44d-415a-bead-cf94d6d27abd"
-          ]
+          "connections": []
         }
       ],
       "inputs": [
         {
           "label": "trigger",
-          "id": "062e52a9-eddd-44fe-a3c5-b16c195fb4d7"
+          "id": "d356ec7a-58e4-43c2-8022-3161f3d85a0e"
         }
       ],
-      "x": 1702,
-      "y": 269,
+      "x": 1995,
+      "y": 170,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
@@ -1373,84 +1378,6 @@
     },
     {
       "type": "response",
-      "name": "Check",
-      "guid": "062e52a9-eddd-44fe-a3c5-b16c195fb4d7",
-      "reactionFields": [],
-      "embedfields": [],
-      "outputs": [
-        {
-          "label": "true",
-          "connections": [
-            "8d6f782f-f981-4415-9a9f-e65a23733597"
-          ]
-        },
-        {
-          "label": "false",
-          "connections": [
-            "c2713e1c-e2f7-48b1-a7fd-aa9a97428f40"
-          ]
-        }
-      ],
-      "inputs": [
-        {
-          "label": "trigger",
-          "id": "d356ec7a-58e4-43c2-8022-3161f3d85a0e"
-        }
-      ],
-      "x": 1702,
-      "y": 127,
-      "rtype": "User Data",
-      "rsubtype": "Check User Data",
-      "formdata": [
-        "${dbsVars.CommandAuthor.id}",
-        "cooldown",
-        "equal to",
-        "0"
-      ],
-      "formnames": [
-        "user",
-        "field",
-        "compare",
-        "value"
-      ]
-    },
-    {
-      "type": "response",
-      "name": "setbalancefalse",
-      "guid": "f2d61da3-c44d-415a-bead-cf94d6d27abd",
-      "reactionFields": [],
-      "embedfields": [],
-      "outputs": [
-        {
-          "label": "next response",
-          "connections": [
-            "b9bf1f6e-3c7b-4be4-a883-1b971b7346dd"
-          ]
-        }
-      ],
-      "inputs": [
-        {
-          "label": "trigger",
-          "id": "8d6f782f-f981-4415-9a9f-e65a23733597"
-        }
-      ],
-      "x": 2014,
-      "y": 133,
-      "rtype": "User Data",
-      "rsubtype": "Set User Data",
-      "formdata": [
-        "${dbsVars.CommandAuthor.id}",
-        "cooldown",
-        "1"
-      ],
-      "formnames": [
-        "user",
-        "field",
-        "fieldvalue"
-      ]
-    },
-    {
-      "type": "response",
       "name": "wallet info",
       "guid": "6d167fbf-448d-48ab-9480-11122b523f5a",
       "reactionFields": [],
@@ -1543,201 +1470,6 @@
         "timestamp",
         "saveToVariable",
         "saveToVariableType"
-      ]
-    },
-    {
-      "type": "response",
-      "name": "wait",
-      "guid": "b9bf1f6e-3c7b-4be4-a883-1b971b7346dd",
-      "reactionFields": [],
-      "embedfields": [],
-      "outputs": [
-        {
-          "label": "next response",
-          "connections": [
-            "bca3bb7e-5460-47f1-b481-9806ac98043f"
-          ]
-        }
-      ],
-      "inputs": [
-        {
-          "label": "trigger",
-          "id": "f2d61da3-c44d-415a-bead-cf94d6d27abd"
-        }
-      ],
-      "x": 2172,
-      "y": 135,
-      "rtype": "Bot Action",
-      "rsubtype": "Edited Wait",
-      "formdata": [
-        "3"
-      ],
-      "formnames": [
-        "seconds"
-      ]
-    },
-    {
-      "type": "response",
-      "name": "setbalancefalse_1",
-      "guid": "bca3bb7e-5460-47f1-b481-9806ac98043f",
-      "reactionFields": [],
-      "embedfields": [],
-      "outputs": [
-        {
-          "label": "next response",
-          "connections": []
-        }
-      ],
-      "inputs": [
-        {
-          "label": "trigger",
-          "id": "b9bf1f6e-3c7b-4be4-a883-1b971b7346dd"
-        }
-      ],
-      "x": 2178,
-      "y": 251,
-      "rtype": "User Data",
-      "rsubtype": "Set User Data",
-      "formdata": [
-        "${dbsVars.CommandAuthor.id}",
-        "cooldown",
-        "0"
-      ],
-      "formnames": [
-        "user",
-        "field",
-        "fieldvalue"
-      ]
-    },
-    {
-      "type": "response",
-      "name": "Check_1",
-      "guid": "c2713e1c-e2f7-48b1-a7fd-aa9a97428f40",
-      "reactionFields": [],
-      "embedfields": [],
-      "outputs": [
-        {
-          "label": "true",
-          "connections": [
-            "ab7cb2b9-1713-4d81-a5df-5bfd7193f9ce"
-          ]
-        },
-        {
-          "label": "false",
-          "connections": [
-            "2b6ae0b7-6790-4047-9d87-8cc464836b1b"
-          ]
-        }
-      ],
-      "inputs": [
-        {
-          "label": "trigger",
-          "id": "062e52a9-eddd-44fe-a3c5-b16c195fb4d7"
-        }
-      ],
-      "x": 1856,
-      "y": 126,
-      "rtype": "User Data",
-      "rsubtype": "Check User Data",
-      "formdata": [
-        "${dbsVars.CommandAuthor.id}",
-        "cooldown",
-        "equal to",
-        "1"
-      ],
-      "formnames": [
-        "user",
-        "field",
-        "compare",
-        "value"
-      ]
-    },
-    {
-      "type": "response",
-      "name": "balance_1_1",
-      "guid": "ab7cb2b9-1713-4d81-a5df-5bfd7193f9ce",
-      "reactionFields": [],
-      "embedfields": [],
-      "outputs": [
-        {
-          "label": "next response",
-          "connections": []
-        }
-      ],
-      "inputs": [
-        {
-          "label": "trigger",
-          "id": "c2713e1c-e2f7-48b1-a7fd-aa9a97428f40"
-        }
-      ],
-      "x": 1857,
-      "y": 271,
-      "rtype": "Message",
-      "rsubtype": "Send Embed",
-      "formdata": [
-        "${dbsVars.CommandChannel.id}",
-        "00FF37",
-        "Cooldown",
-        "",
-        "Minigames",
-        "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
-        "",
-        "3 seconds cooldown",
-        "",
-        "",
-        "requested by ${dbsVars.CommandAuthor.user.tag}",
-        "BOOL_TRUE@@",
-        "",
-        "temp"
-      ],
-      "formnames": [
-        "channelname",
-        "color",
-        "title",
-        "url",
-        "authorname",
-        "authorimageurl",
-        "authorlink",
-        "description",
-        "thumbnail",
-        "image",
-        "footer",
-        "timestamp",
-        "saveToVariable",
-        "saveToVariableType"
-      ]
-    },
-    {
-      "type": "response",
-      "name": "setbalancefalse_1_1",
-      "guid": "2b6ae0b7-6790-4047-9d87-8cc464836b1b",
-      "reactionFields": [],
-      "embedfields": [],
-      "outputs": [
-        {
-          "label": "next response",
-          "connections": []
-        }
-      ],
-      "inputs": [
-        {
-          "label": "trigger",
-          "id": "c2713e1c-e2f7-48b1-a7fd-aa9a97428f40"
-        }
-      ],
-      "x": 2015,
-      "y": 248,
-      "rtype": "User Data",
-      "rsubtype": "Set User Data",
-      "formdata": [
-        "${dbsVars.CommandAuthor.id}",
-        "cooldown",
-        "0"
-      ],
-      "formnames": [
-        "user",
-        "field",
-        "fieldvalue"
       ]
     },
     {
@@ -1927,7 +1659,7 @@
           "id": "aced32dc-f758-4c58-a17d-16f3964fa25b"
         }
       ],
-      "x": 1672,
+      "x": 1670,
       "y": 648,
       "rtype": "Message",
       "rsubtype": "Send Embed",
@@ -2640,6 +2372,158 @@
         "saveToVariable",
         "saveToVariableType"
       ]
+    },
+    {
+      "type": "response",
+      "name": "get xp",
+      "guid": "4a864565-90c9-4d3e-8fc0-421f3cb062e1",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "xp",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "a82d5aba-5c1b-487e-92a4-b49dcf5478db"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "f5782ae0-3cbd-489c-b3f9-d7e4442c83a8"
+        }
+      ],
+      "x": 282,
+      "y": 1412,
+      "rtype": "User Data",
+      "rsubtype": "Get User Data",
+      "formdata": [
+        "${dbsVars.CommandAuthor.id}",
+        "xp",
+        "xp",
+        "temp",
+        "User"
+      ],
+      "formnames": [
+        "user",
+        "field",
+        "varname",
+        "saveVarType",
+        "vartype"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "get xp_1",
+      "guid": "a82d5aba-5c1b-487e-92a4-b49dcf5478db",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "lvl",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "b4cb4fa2-f9ce-44e6-94e4-43e71401f208"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "4a864565-90c9-4d3e-8fc0-421f3cb062e1"
+        }
+      ],
+      "x": 439,
+      "y": 1413,
+      "rtype": "User Data",
+      "rsubtype": "Get User Data",
+      "formdata": [
+        "${dbsVars.CommandAuthor.id}",
+        "lvl",
+        "lvl",
+        "temp",
+        "User"
+      ],
+      "formnames": [
+        "user",
+        "field",
+        "varname",
+        "saveVarType",
+        "vartype"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "sendlvl",
+      "guid": "b4cb4fa2-f9ce-44e6-94e4-43e71401f208",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "a82d5aba-5c1b-487e-92a4-b49dcf5478db"
+        }
+      ],
+      "x": 595,
+      "y": 1415,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "08FFF5",
+        "Chatting Skills",
+        "",
+        "do you want some chikin",
+        "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
+        "",
+        "Level: ${tempVars.lvl}\nXP: ${tempVars.xp}/100",
+        "",
+        "",
+        "requested by ${dbsVars.CommandAuthor.user.tag}",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "userinfo",
+      "guid": "f5782ae0-3cbd-489c-b3f9-d7e4442c83a8",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "4a864565-90c9-4d3e-8fc0-421f3cb062e1"
+          ]
+        }
+      ],
+      "x": 124,
+      "y": 1433
     }
   ]
 }

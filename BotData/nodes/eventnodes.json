@@ -27,7 +27,9 @@
       "outputs": [
         {
           "label": "responses",
-          "connections": []
+          "connections": [
+            "5344eeb1-e524-4850-bb4c-97d2baeb80f4"
+          ]
         }
       ],
       "x": 101,
@@ -82,6 +84,230 @@
       "x": 100,
       "y": 625,
       "perms": []
+    },
+    {
+      "type": "response",
+      "name": "xp1",
+      "guid": "59de2fef-6e0e-4047-b722-7322742c44d7",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "d002a9e3-5c5d-4505-83b7-b24891dbf251"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "5344eeb1-e524-4850-bb4c-97d2baeb80f4"
+        }
+      ],
+      "x": 498,
+      "y": 475,
+      "rtype": "User Data",
+      "rsubtype": "Edit User Data",
+      "formdata": [
+        "${tempVars.msguser.id}",
+        "xp",
+        "+",
+        "${tempVars.generate}"
+      ],
+      "formnames": [
+        "user",
+        "field",
+        "oper",
+        "value"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "generate xp",
+      "guid": "5344eeb1-e524-4850-bb4c-97d2baeb80f4",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "59de2fef-6e0e-4047-b722-7322742c44d7"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "49ebbc23-2903-4f05-ab69-bc9ecb4f8888"
+        }
+      ],
+      "x": 294,
+      "y": 490,
+      "rtype": "Variable",
+      "rsubtype": "Generate Random Number",
+      "formdata": [
+        "generate",
+        "1",
+        "15",
+        "temp"
+      ],
+      "formnames": [
+        "varname",
+        "min",
+        "max",
+        "saveVarType"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "lvl",
+      "guid": "d002a9e3-5c5d-4505-83b7-b24891dbf251",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "true",
+          "connections": [
+            "fb6d8e66-3d3b-4ef4-a282-f94367f54f69"
+          ]
+        },
+        {
+          "label": "false",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "59de2fef-6e0e-4047-b722-7322742c44d7"
+        }
+      ],
+      "x": 686,
+      "y": 461,
+      "rtype": "User Data",
+      "rsubtype": "Check User Data",
+      "formdata": [
+        "${tempVars.msguser.id}",
+        "xp",
+        "greater than",
+        "99"
+      ],
+      "formnames": [
+        "user",
+        "field",
+        "compare",
+        "value"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "xp1_1",
+      "guid": "fb6d8e66-3d3b-4ef4-a282-f94367f54f69",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "2d904937-90c2-48ce-9169-d9f26da16073"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "d002a9e3-5c5d-4505-83b7-b24891dbf251"
+        }
+      ],
+      "x": 849,
+      "y": 439,
+      "rtype": "User Data",
+      "rsubtype": "Edit User Data",
+      "formdata": [
+        "${tempVars.msguser.id}",
+        "lvl",
+        "+",
+        "1"
+      ],
+      "formnames": [
+        "user",
+        "field",
+        "oper",
+        "value"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "setto0",
+      "guid": "2d904937-90c2-48ce-9169-d9f26da16073",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "bc784eb3-b6e7-4af5-adc6-f3f2913ed8b9"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "fb6d8e66-3d3b-4ef4-a282-f94367f54f69"
+        }
+      ],
+      "x": 1009,
+      "y": 442,
+      "rtype": "User Data",
+      "rsubtype": "Set User Data",
+      "formdata": [
+        "${tempVars.msguser.id}",
+        "xp",
+        "0"
+      ],
+      "formnames": [
+        "user",
+        "field",
+        "fieldvalue"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "errormsg",
+      "guid": "bc784eb3-b6e7-4af5-adc6-f3f2913ed8b9",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "2d904937-90c2-48ce-9169-d9f26da16073"
+        }
+      ],
+      "x": 1175,
+      "y": 440,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "${dbsVars.DefaultChannel.id}",
+        "<@${tempVars.msguser.id}> Chatting Level Up!",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
     }
   ]
 }

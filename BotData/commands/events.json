@@ -11,7 +11,64 @@
     {
       "name": "Any Message",
       "perms": [],
-      "actions": [],
+      "actions": [
+        {
+          "name": "generate xp",
+          "category": "Variable",
+          "type": "Generate Random Number",
+          "varname": "generate",
+          "min": "1",
+          "max": "15",
+          "savevartype": "temp"
+        },
+        {
+          "name": "xp1",
+          "category": "User Data",
+          "type": "Edit User Data",
+          "user": "${tempVars.msguser.id}",
+          "field": "xp",
+          "oper": "+",
+          "value": "${tempVars.generate}"
+        },
+        {
+          "name": "lvl",
+          "category": "User Data",
+          "type": "Check User Data",
+          "trueActions": [
+            {
+              "name": "xp1_1",
+              "category": "User Data",
+              "type": "Edit User Data",
+              "user": "${tempVars.msguser.id}",
+              "field": "lvl",
+              "oper": "+",
+              "value": "1"
+            },
+            {
+              "name": "setto0",
+              "category": "User Data",
+              "type": "Set User Data",
+              "user": "${tempVars.msguser.id}",
+              "field": "xp",
+              "fieldvalue": "0"
+            },
+            {
+              "name": "errormsg",
+              "category": "Message",
+              "type": "Send Message",
+              "channelname": "${dbsVars.DefaultChannel.id}",
+              "messagetext": "<@${tempVars.msguser.id}> Chatting Level Up!",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            }
+          ],
+          "falseActions": [],
+          "user": "${tempVars.msguser.id}",
+          "field": "xp",
+          "compare": "greater than",
+          "value": "99"
+        }
+      ],
       "var": {
         "user": "msguser"
       }
