@@ -57,8 +57,6 @@
           "inline": "false"
         }
       ],
-      "saveToVariable": "",
-      "saveToVariableType": "temp",
       "outputs": [
         {
           "label": "next response",
@@ -2461,6 +2459,8 @@
       "guid": "b4cb4fa2-f9ce-44e6-94e4-43e71401f208",
       "reactionFields": [],
       "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
       "outputs": [
         {
           "label": "next response",
@@ -2485,7 +2485,7 @@
         "do you want some chikin",
         "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
         "",
-        "Level: ${tempVars.lvl}\nXP: ${tempVars.xp}/100",
+        "Level: ${tempVars.lvl}\nXP: ${tempVars.xp}/1000",
         "",
         "",
         "requested by ${dbsVars.CommandAuthor.user.tag}",

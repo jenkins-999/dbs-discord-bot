@@ -772,7 +772,7 @@
           "authorname": "do you want some chikin",
           "authorimageurl": "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
           "authorlink": "",
-          "description": "Level: ${tempVars.lvl}\nXP: ${tempVars.xp}/100",
+          "description": "Level: ${tempVars.lvl}\nXP: ${tempVars.xp}/1000",
           "thumbnail": "",
           "image": "",
           "footer": "requested by ${dbsVars.CommandAuthor.user.tag}",

@@ -18,7 +18,7 @@
           "type": "Generate Random Number",
           "varname": "generate",
           "min": "1",
-          "max": "15",
+          "max": "35",
           "savevartype": "temp"
         },
         {
@@ -66,7 +66,7 @@
           "user": "${tempVars.msguser.id}",
           "field": "xp",
           "compare": "greater than",
-          "value": "99"
+          "value": "999"
         }
       ],
       "var": {

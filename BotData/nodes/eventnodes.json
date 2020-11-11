@@ -105,8 +105,8 @@
           "id": "5344eeb1-e524-4850-bb4c-97d2baeb80f4"
         }
       ],
-      "x": 498,
-      "y": 475,
+      "x": 482,
+      "y": 472,
       "rtype": "User Data",
       "rsubtype": "Edit User Data",
       "formdata": [
@@ -149,7 +149,7 @@
       "formdata": [
         "generate",
         "1",
-        "15",
+        "35",
         "temp"
       ],
       "formnames": [
@@ -183,15 +183,15 @@
           "id": "59de2fef-6e0e-4047-b722-7322742c44d7"
         }
       ],
-      "x": 686,
-      "y": 461,
+      "x": 678,
+      "y": 465,
       "rtype": "User Data",
       "rsubtype": "Check User Data",
       "formdata": [
         "${tempVars.msguser.id}",
         "xp",
         "greater than",
-        "99"
+        "999"
       ],
       "formnames": [
         "user",
@@ -278,8 +278,6 @@
       "guid": "bc784eb3-b6e7-4af5-adc6-f3f2913ed8b9",
       "reactionFields": [],
       "embedfields": [],
-      "saveToVariable": "",
-      "saveToVariableType": "temp",
       "outputs": [
         {
           "label": "next response",
