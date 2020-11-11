@@ -16,7 +16,7 @@
           "name": "generate xp",
           "category": "Variable",
           "type": "Generate Random Number",
-          "varname": "generate",
+          "varname": "generatexp",
           "min": "1",
           "max": "35",
           "savevartype": "temp"
@@ -28,7 +28,7 @@
           "user": "${tempVars.msguser.id}",
           "field": "xp",
           "oper": "+",
-          "value": "${tempVars.generate}"
+          "value": "${tempVars.generatexp}"
         },
         {
           "name": "lvl",
