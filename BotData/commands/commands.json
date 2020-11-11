@@ -377,27 +377,6 @@
           "type": "Check User Data",
           "trueActions": [
             {
-              "name": "no correct withdraw",
-              "category": "Message",
-              "type": "Send Embed",
-              "channelname": "${dbsVars.CommandChannel.id}",
-              "color": "FF0000",
-              "title": "Withdraw",
-              "url": "",
-              "authorname": "Minigames",
-              "authorimageurl": "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
-              "authorlink": "",
-              "description": ":dollar: | Kamu gak bisa menarik lebih banyak uang daripada yang kamu punya",
-              "thumbnail": "",
-              "image": "",
-              "footer": "requested by ${dbsVars.CommandAuthor.user.tag}",
-              "timestamp": "BOOL_TRUE@@",
-              "savetovariable": "",
-              "savetovariabletype": "temp"
-            }
-          ],
-          "falseActions": [
-            {
               "name": "-bank",
               "category": "User Data",
               "type": "Edit User Data",
@@ -430,6 +409,27 @@
               "thumbnail": "",
               "image": "",
               "footer": "requested by ${dbsVars.CommandAuthor.id}",
+              "timestamp": "BOOL_TRUE@@",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            }
+          ],
+          "falseActions": [
+            {
+              "name": "no correct withdraw",
+              "category": "Message",
+              "type": "Send Embed",
+              "channelname": "${dbsVars.CommandChannel.id}",
+              "color": "FF0000",
+              "title": "Withdraw",
+              "url": "",
+              "authorname": "Minigames",
+              "authorimageurl": "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
+              "authorlink": "",
+              "description": ":dollar: | Kamu gak bisa menarik lebih banyak uang daripada yang kamu punya",
+              "thumbnail": "",
+              "image": "",
+              "footer": "requested by ${dbsVars.CommandAuthor.user.tag}",
               "timestamp": "BOOL_TRUE@@",
               "savetovariable": "",
               "savetovariabletype": "temp"

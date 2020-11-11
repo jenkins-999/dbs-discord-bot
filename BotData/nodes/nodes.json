@@ -482,7 +482,7 @@
         }
       ],
       "x": 994,
-      "y": 566,
+      "y": 565,
       "rtype": "User Data",
       "rsubtype": "Check User Data",
       "formdata": [
@@ -859,8 +859,8 @@
           ]
         }
       ],
-      "x": 676,
-      "y": 878
+      "x": 579,
+      "y": 936
     },
     {
       "type": "response",
@@ -884,8 +884,8 @@
           "id": "57b2802d-a64e-4d83-90c0-4d82344267cb"
         }
       ],
-      "x": 835,
-      "y": 926,
+      "x": 770,
+      "y": 930,
       "rtype": "Variable",
       "rsubtype": "Store Value in Variable",
       "formdata": [
@@ -911,13 +911,13 @@
         {
           "label": "true",
           "connections": [
-            "a2417160-e9f9-4bee-915d-1751523d5564"
+            "bee112f5-5ae3-443a-85f2-4eddc252a81e"
           ]
         },
         {
           "label": "false",
           "connections": [
-            "bee112f5-5ae3-443a-85f2-4eddc252a81e"
+            "a2417160-e9f9-4bee-915d-1751523d5564"
           ]
         }
       ],
@@ -927,8 +927,8 @@
           "id": "bfee0b2a-74c9-49b2-8b95-b1472febeab4"
         }
       ],
-      "x": 833,
-      "y": 785,
+      "x": 934,
+      "y": 927,
       "rtype": "User Data",
       "rsubtype": "Check User Data",
       "formdata": [
@@ -962,8 +962,8 @@
           "id": "91dfd8ba-676c-4bd9-8c8c-721173e1f182"
         }
       ],
-      "x": 989,
-      "y": 810,
+      "x": 1134,
+      "y": 916,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
@@ -1019,8 +1019,8 @@
           "id": "91dfd8ba-676c-4bd9-8c8c-721173e1f182"
         }
       ],
-      "x": 990,
-      "y": 945,
+      "x": 1069,
+      "y": 1144,
       "rtype": "User Data",
       "rsubtype": "Edit User Data",
       "formdata": [
@@ -1056,8 +1056,8 @@
           "id": "bee112f5-5ae3-443a-85f2-4eddc252a81e"
         }
       ],
-      "x": 1143,
-      "y": 823,
+      "x": 1248,
+      "y": 1144,
       "rtype": "User Data",
       "rsubtype": "Edit User Data",
       "formdata": [
@@ -1091,8 +1091,8 @@
           "id": "15653f45-f486-47a3-a20f-e409a27a8b0b"
         }
       ],
-      "x": 1149,
-      "y": 937,
+      "x": 1436,
+      "y": 1119,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
@@ -1171,8 +1171,6 @@
       "guid": "d356ec7a-58e4-43c2-8022-3161f3d85a0e",
       "reactionFields": [],
       "embedfields": [],
-      "saveToVariable": "",
-      "saveToVariableType": "temp",
       "outputs": [
         {
           "label": "next response",
@@ -1324,8 +1322,6 @@
           "inline": "false"
         }
       ],
-      "saveToVariable": "",
-      "saveToVariableType": "temp",
       "outputs": [
         {
           "label": "next response",
@@ -1765,8 +1761,6 @@
       "guid": "ca24883a-a95c-47dc-87d2-50c07aa95afd",
       "reactionFields": [],
       "embedfields": [],
-      "saveToVariable": "",
-      "saveToVariableType": "temp",
       "outputs": [
         {
           "label": "next response",
