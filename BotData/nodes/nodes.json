@@ -52,8 +52,6 @@
           "inline": "false"
         }
       ],
-      "saveToVariable": "",
-      "saveToVariableType": "temp",
       "outputs": [
         {
           "label": "next response",
@@ -66,8 +64,8 @@
           "id": "7942fe4c-dffa-4146-8cab-d254b3d80d5d"
         }
       ],
-      "x": 324,
-      "y": 61,
+      "x": 312,
+      "y": 57,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
@@ -121,8 +119,8 @@
           "id": "2224944a-561a-4fa1-824b-2f31ea37c836"
         }
       ],
-      "x": 410,
-      "y": 294,
+      "x": 309,
+      "y": 309,
       "rtype": "Message",
       "rsubtype": "Send Message",
       "formdata": [
@@ -176,8 +174,8 @@
           "id": "46c1335d-e460-445e-9642-77c6e75a11b5"
         }
       ],
-      "x": 390,
-      "y": 452,
+      "x": 309,
+      "y": 426,
       "rtype": "Variable",
       "rsubtype": "Store Value in Variable",
       "formdata": [
@@ -211,12 +209,12 @@
           "id": "23f96e55-cd6b-4098-b100-f42ee231b38c"
         }
       ],
-      "x": 623,
-      "y": 460,
+      "x": 467,
+      "y": 418,
       "rtype": "Message",
       "rsubtype": "Send Message",
       "formdata": [
-        "general-chat",
+        "simple-money-game",
         "${tempVars.saidmessage}",
         "",
         "temp"
@@ -240,7 +238,7 @@
           ]
         }
       ],
-      "x": 140,
+      "x": 145,
       "y": 617
     },
     {
@@ -261,8 +259,8 @@
           "id": "42571309-554f-4355-8be8-1de749098b5e"
         }
       ],
-      "x": 624,
-      "y": 627,
+      "x": 465,
+      "y": 596,
       "rtype": "Message",
       "rsubtype": "Inv Link",
       "formdata": [
@@ -288,8 +286,8 @@
           ]
         }
       ],
-      "x": 143,
-      "y": 778,
+      "x": 161,
+      "y": 784,
       "perms": []
     },
     {
@@ -310,8 +308,8 @@
           "id": "487adaf6-ae97-4806-9e03-2af9da03cbc8"
         }
       ],
-      "x": 379,
-      "y": 748,
+      "x": 319,
+      "y": 778,
       "rtype": "Bot Action",
       "rsubtype": "Set Status",
       "formdata": [
@@ -339,8 +337,8 @@
           "id": "620e7e0c-2cc4-4dad-bbc6-ae15eae1f21f"
         }
       ],
-      "x": 449,
-      "y": 935,
+      "x": 320,
+      "y": 891,
       "rtype": "Bot Action",
       "rsubtype": "More Status",
       "formdata": [
@@ -364,8 +362,8 @@
           ]
         }
       ],
-      "x": 147,
-      "y": 888,
+      "x": 155,
+      "y": 892,
       "perms": []
     },
     {
@@ -388,8 +386,8 @@
           "id": "6293fb1f-c21a-4cba-a802-0faff378c43f"
         }
       ],
-      "x": 378,
-      "y": 614,
+      "x": 303,
+      "y": 600,
       "rtype": "Variable",
       "rsubtype": "Get Mentioned User",
       "formdata": [
@@ -415,8 +413,8 @@
           ]
         }
       ],
-      "x": 854,
-      "y": 584
+      "x": 680,
+      "y": 619
     },
     {
       "type": "response",
@@ -440,8 +438,8 @@
           "id": "dd6f3090-7ee5-431f-bd66-2b1f9ef809ff"
         }
       ],
-      "x": 1018,
-      "y": 574,
+      "x": 839,
+      "y": 604,
       "rtype": "Variable",
       "rsubtype": "Store Value in Variable",
       "formdata": [
@@ -483,8 +481,8 @@
           "id": "4a40dd08-8b6a-4b47-909c-f2fad5ef83ac"
         }
       ],
-      "x": 1186,
-      "y": 570,
+      "x": 994,
+      "y": 566,
       "rtype": "User Data",
       "rsubtype": "Check User Data",
       "formdata": [
@@ -520,8 +518,8 @@
           "id": "057f8d3e-0342-478a-93d5-2a8d34ba4fc7"
         }
       ],
-      "x": 1358,
-      "y": 713,
+      "x": 1150,
+      "y": 703,
       "rtype": "User Data",
       "rsubtype": "Edit User Data",
       "formdata": [
@@ -557,8 +555,8 @@
           "id": "17c93f3b-7a12-459c-a850-28f0beb52b01"
         }
       ],
-      "x": 1520,
-      "y": 653,
+      "x": 1308,
+      "y": 683,
       "rtype": "User Data",
       "rsubtype": "Edit User Data",
       "formdata": [
@@ -592,8 +590,8 @@
           "id": "057f8d3e-0342-478a-93d5-2a8d34ba4fc7"
         }
       ],
-      "x": 1355,
-      "y": 571,
+      "x": 1150,
+      "y": 566,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
@@ -647,8 +645,8 @@
           "id": "f18440b4-f414-4164-bde5-668a65dac1d3"
         }
       ],
-      "x": 1525,
-      "y": 542,
+      "x": 1305,
+      "y": 570,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
@@ -659,7 +657,7 @@
         "Minigames",
         "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
         "",
-        ":dollar: | Kamu menyimpan sebanyak \n$ ${tempVars.deposit}",
+        ":dollar: | Kamu menyimpan Rp ${tempVars.deposit} ke bank",
         "",
         "",
         "requested by ${dbsVars.CommandAuthor.user.tag}",
@@ -696,8 +694,8 @@
           ]
         }
       ],
-      "x": 853,
-      "y": 449
+      "x": 674,
+      "y": 466
     },
     {
       "type": "response",
@@ -721,8 +719,8 @@
           "id": "262c9245-645c-4c8a-9f4c-289dd25b540f"
         }
       ],
-      "x": 1013,
-      "y": 436,
+      "x": 828,
+      "y": 454,
       "rtype": "User Data",
       "rsubtype": "Get User Data",
       "formdata": [
@@ -758,8 +756,8 @@
           "id": "89d5de42-fd40-4a41-80a5-de42961563f6"
         }
       ],
-      "x": 1174,
-      "y": 441,
+      "x": 990,
+      "y": 446,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
@@ -807,8 +805,8 @@
           ]
         }
       ],
-      "x": 848,
-      "y": 313
+      "x": 1391,
+      "y": 262
     },
     {
       "type": "response",
@@ -830,8 +828,8 @@
           "id": "b32c3bc7-8b60-4729-8c34-7a74cc81a478"
         }
       ],
-      "x": 1093,
-      "y": 167,
+      "x": 1009,
+      "y": 64,
       "rtype": "User Data",
       "rsubtype": "Get User Data",
       "formdata": [
@@ -861,8 +859,8 @@
           ]
         }
       ],
-      "x": 867,
-      "y": 778
+      "x": 676,
+      "y": 878
     },
     {
       "type": "response",
@@ -886,8 +884,8 @@
           "id": "57b2802d-a64e-4d83-90c0-4d82344267cb"
         }
       ],
-      "x": 1025,
-      "y": 809,
+      "x": 835,
+      "y": 926,
       "rtype": "Variable",
       "rsubtype": "Store Value in Variable",
       "formdata": [
@@ -929,8 +927,8 @@
           "id": "bfee0b2a-74c9-49b2-8b95-b1472febeab4"
         }
       ],
-      "x": 1190,
-      "y": 812,
+      "x": 833,
+      "y": 785,
       "rtype": "User Data",
       "rsubtype": "Check User Data",
       "formdata": [
@@ -964,8 +962,8 @@
           "id": "91dfd8ba-676c-4bd9-8c8c-721173e1f182"
         }
       ],
-      "x": 1359,
-      "y": 836,
+      "x": 989,
+      "y": 810,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
@@ -1021,8 +1019,8 @@
           "id": "91dfd8ba-676c-4bd9-8c8c-721173e1f182"
         }
       ],
-      "x": 1358,
-      "y": 986,
+      "x": 990,
+      "y": 945,
       "rtype": "User Data",
       "rsubtype": "Edit User Data",
       "formdata": [
@@ -1058,8 +1056,8 @@
           "id": "bee112f5-5ae3-443a-85f2-4eddc252a81e"
         }
       ],
-      "x": 1523,
-      "y": 841,
+      "x": 1143,
+      "y": 823,
       "rtype": "User Data",
       "rsubtype": "Edit User Data",
       "formdata": [
@@ -1093,8 +1091,8 @@
           "id": "15653f45-f486-47a3-a20f-e409a27a8b0b"
         }
       ],
-      "x": 1530,
-      "y": 958,
+      "x": 1149,
+      "y": 937,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
@@ -1105,7 +1103,7 @@
         "Minigames",
         "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
         "",
-        ":dollar: | Kamu menarik uang sebesar ${tempVars.withdraw} dari Bank",
+        ":dollar: | Kamu menarik uang sebesar Rp ${tempVars.withdraw} dari Bank",
         "",
         "",
         "requested by ${dbsVars.CommandAuthor.id}",
@@ -1150,14 +1148,14 @@
           "id": "761044e0-18a8-40c2-aeea-792e5b74b768"
         }
       ],
-      "x": 1007,
-      "y": 296,
+      "x": 1546,
+      "y": 136,
       "rtype": "Variable",
       "rsubtype": "Generate Random Number",
       "formdata": [
         "generate",
         "1",
-        "900",
+        "2500",
         "temp"
       ],
       "formnames": [
@@ -1173,11 +1171,13 @@
       "guid": "d356ec7a-58e4-43c2-8022-3161f3d85a0e",
       "reactionFields": [],
       "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
       "outputs": [
         {
           "label": "next response",
           "connections": [
-            "8d6f782f-f981-4415-9a9f-e65a23733597"
+            "062e52a9-eddd-44fe-a3c5-b16c195fb4d7"
           ]
         }
       ],
@@ -1187,8 +1187,8 @@
           "id": "f07e6a3d-0206-4029-a9b3-7715bd9f39d1"
         }
       ],
-      "x": 1165,
-      "y": 301,
+      "x": 1546,
+      "y": 271,
       "rtype": "User Data",
       "rsubtype": "Edit User Data",
       "formdata": [
@@ -1213,17 +1213,19 @@
       "outputs": [
         {
           "label": "next response",
-          "connections": []
+          "connections": [
+            "f2d61da3-c44d-415a-bead-cf94d6d27abd"
+          ]
         }
       ],
       "inputs": [
         {
           "label": "trigger",
-          "id": "d356ec7a-58e4-43c2-8022-3161f3d85a0e"
+          "id": "062e52a9-eddd-44fe-a3c5-b16c195fb4d7"
         }
       ],
-      "x": 1328,
-      "y": 303,
+      "x": 1702,
+      "y": 269,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
@@ -1234,10 +1236,10 @@
         "Minigames",
         "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
         "",
-        ":dollar: | Kamu selesai kerja dan dibayar sebesar $ ${tempVars.generate} !",
+        ":dollar: | Kamu selesai kerja dan dibayar sebesar Rp ${tempVars.generate} !",
         "",
         "",
-        "requested by ${dbsVars.CommandAuthor.id}",
+        "requested by ${dbsVars.CommandAuthor.user.tag}",
         "BOOL_TRUE@@",
         "",
         "temp"
@@ -1267,109 +1269,13 @@
         {
           "label": "responses",
           "connections": [
-            "e455f089-a37a-4bd5-83e5-b0c4511c2408",
+            "6d167fbf-448d-48ab-9480-11122b523f5a",
             "d435fba3-5685-4260-ac8d-e71ea64d6e04"
           ]
         }
       ],
-      "x": 931,
-      "y": 120
-    },
-    {
-      "type": "response",
-      "name": "get user data",
-      "guid": "e455f089-a37a-4bd5-83e5-b0c4511c2408",
-      "reactionFields": [],
-      "embedfields": [],
-      "saveToVariable": "wallet",
-      "saveToVariableType": "temp",
-      "outputs": [
-        {
-          "label": "next response",
-          "connections": [
-            "d283c0fc-64ab-46a0-b0c4-f0803a0a3b4c"
-          ]
-        }
-      ],
-      "inputs": [
-        {
-          "label": "trigger",
-          "id": "b32c3bc7-8b60-4729-8c34-7a74cc81a478"
-        }
-      ],
-      "x": 1092,
-      "y": 48,
-      "rtype": "User Data",
-      "rsubtype": "Get User Data",
-      "formdata": [
-        "${dbsVars.CommandAuthor.id}",
-        "wallet",
-        "wallet",
-        "temp",
-        "User"
-      ],
-      "formnames": [
-        "user",
-        "field",
-        "varname",
-        "saveVarType",
-        "vartype"
-      ]
-    },
-    {
-      "type": "response",
-      "name": "balance",
-      "guid": "d283c0fc-64ab-46a0-b0c4-f0803a0a3b4c",
-      "reactionFields": [],
-      "embedfields": [],
-      "outputs": [
-        {
-          "label": "next response",
-          "connections": []
-        }
-      ],
-      "inputs": [
-        {
-          "label": "trigger",
-          "id": "e455f089-a37a-4bd5-83e5-b0c4511c2408"
-        }
-      ],
-      "x": 1266,
-      "y": 129,
-      "rtype": "Message",
-      "rsubtype": "Send Embed",
-      "formdata": [
-        "${dbsVars.CommandChannel.id}",
-        "00FF37",
-        "Your Balance",
-        "",
-        "Minigames",
-        "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
-        "",
-        "__Wallet__\n:dollar: | $ ${tempVars.wallet}\n\n__Bank__\n:dollar: | $ ${tempVars.bank}",
-        "",
-        "",
-        "requested by ${dbsVars.CommandAuthor.user.tag}",
-        "BOOL_TRUE@@",
-        "",
-        "temp"
-      ],
-      "formnames": [
-        "channelname",
-        "color",
-        "title",
-        "url",
-        "authorname",
-        "authorimageurl",
-        "authorlink",
-        "description",
-        "thumbnail",
-        "image",
-        "footer",
-        "timestamp",
-        "saveToVariable",
-        "saveToVariableType"
-      ]
+      "x": 693,
+      "y": 68
     },
     {
       "type": "command",
@@ -1411,6 +1317,11 @@
           "name": "withdraw",
           "value": "Tarik uang ",
           "inline": "false"
+        },
+        {
+          "name": "shop",
+          "value": "Buy temporary roles!",
+          "inline": "false"
         }
       ],
       "saveToVariable": "",
@@ -1427,7 +1338,7 @@
           "id": "7cc32fc4-3d09-4f3e-b244-2b51fc1074cf"
         }
       ],
-      "x": 326,
+      "x": 316,
       "y": 187,
       "rtype": "Message",
       "rsubtype": "Send Embed",
@@ -1443,6 +1354,1278 @@
         "",
         "",
         "requested by ${dbsVars.CommandAuthor.user.tag}",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "Check",
+      "guid": "062e52a9-eddd-44fe-a3c5-b16c195fb4d7",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "true",
+          "connections": [
+            "8d6f782f-f981-4415-9a9f-e65a23733597"
+          ]
+        },
+        {
+          "label": "false",
+          "connections": [
+            "c2713e1c-e2f7-48b1-a7fd-aa9a97428f40"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "d356ec7a-58e4-43c2-8022-3161f3d85a0e"
+        }
+      ],
+      "x": 1702,
+      "y": 127,
+      "rtype": "User Data",
+      "rsubtype": "Check User Data",
+      "formdata": [
+        "${dbsVars.CommandAuthor.id}",
+        "cooldown",
+        "equal to",
+        "0"
+      ],
+      "formnames": [
+        "user",
+        "field",
+        "compare",
+        "value"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "setbalancefalse",
+      "guid": "f2d61da3-c44d-415a-bead-cf94d6d27abd",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "b9bf1f6e-3c7b-4be4-a883-1b971b7346dd"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "8d6f782f-f981-4415-9a9f-e65a23733597"
+        }
+      ],
+      "x": 2014,
+      "y": 133,
+      "rtype": "User Data",
+      "rsubtype": "Set User Data",
+      "formdata": [
+        "${dbsVars.CommandAuthor.id}",
+        "cooldown",
+        "1"
+      ],
+      "formnames": [
+        "user",
+        "field",
+        "fieldvalue"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "wallet info",
+      "guid": "6d167fbf-448d-48ab-9480-11122b523f5a",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "wallet",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "71a29c13-448c-476e-8eb6-2bf77dbd3feb"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "b32c3bc7-8b60-4729-8c34-7a74cc81a478"
+        }
+      ],
+      "x": 851,
+      "y": 63,
+      "rtype": "User Data",
+      "rsubtype": "Get User Data",
+      "formdata": [
+        "${dbsVars.CommandAuthor.id}",
+        "wallet",
+        "wallet",
+        "temp",
+        "User"
+      ],
+      "formnames": [
+        "user",
+        "field",
+        "varname",
+        "saveVarType",
+        "vartype"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "balance_1",
+      "guid": "71a29c13-448c-476e-8eb6-2bf77dbd3feb",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "6d167fbf-448d-48ab-9480-11122b523f5a"
+        }
+      ],
+      "x": 1166,
+      "y": 65,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "00FF37",
+        "Your Balance",
+        "",
+        "Minigames",
+        "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
+        "",
+        "__Wallet__\n:dollar: | Rp ${tempVars.wallet}\n\n__Bank__\n:dollar: | Rp ${tempVars.bank}",
+        "",
+        "",
+        "requested by ${dbsVars.CommandAuthor.user.tag}",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "wait",
+      "guid": "b9bf1f6e-3c7b-4be4-a883-1b971b7346dd",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "bca3bb7e-5460-47f1-b481-9806ac98043f"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "f2d61da3-c44d-415a-bead-cf94d6d27abd"
+        }
+      ],
+      "x": 2172,
+      "y": 135,
+      "rtype": "Bot Action",
+      "rsubtype": "Edited Wait",
+      "formdata": [
+        "3"
+      ],
+      "formnames": [
+        "seconds"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "setbalancefalse_1",
+      "guid": "bca3bb7e-5460-47f1-b481-9806ac98043f",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "b9bf1f6e-3c7b-4be4-a883-1b971b7346dd"
+        }
+      ],
+      "x": 2178,
+      "y": 251,
+      "rtype": "User Data",
+      "rsubtype": "Set User Data",
+      "formdata": [
+        "${dbsVars.CommandAuthor.id}",
+        "cooldown",
+        "0"
+      ],
+      "formnames": [
+        "user",
+        "field",
+        "fieldvalue"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "Check_1",
+      "guid": "c2713e1c-e2f7-48b1-a7fd-aa9a97428f40",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "true",
+          "connections": [
+            "ab7cb2b9-1713-4d81-a5df-5bfd7193f9ce"
+          ]
+        },
+        {
+          "label": "false",
+          "connections": [
+            "2b6ae0b7-6790-4047-9d87-8cc464836b1b"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "062e52a9-eddd-44fe-a3c5-b16c195fb4d7"
+        }
+      ],
+      "x": 1856,
+      "y": 126,
+      "rtype": "User Data",
+      "rsubtype": "Check User Data",
+      "formdata": [
+        "${dbsVars.CommandAuthor.id}",
+        "cooldown",
+        "equal to",
+        "1"
+      ],
+      "formnames": [
+        "user",
+        "field",
+        "compare",
+        "value"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "balance_1_1",
+      "guid": "ab7cb2b9-1713-4d81-a5df-5bfd7193f9ce",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "c2713e1c-e2f7-48b1-a7fd-aa9a97428f40"
+        }
+      ],
+      "x": 1857,
+      "y": 271,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "00FF37",
+        "Cooldown",
+        "",
+        "Minigames",
+        "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
+        "",
+        "3 seconds cooldown",
+        "",
+        "",
+        "requested by ${dbsVars.CommandAuthor.user.tag}",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "setbalancefalse_1_1",
+      "guid": "2b6ae0b7-6790-4047-9d87-8cc464836b1b",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "c2713e1c-e2f7-48b1-a7fd-aa9a97428f40"
+        }
+      ],
+      "x": 2015,
+      "y": 248,
+      "rtype": "User Data",
+      "rsubtype": "Set User Data",
+      "formdata": [
+        "${dbsVars.CommandAuthor.id}",
+        "cooldown",
+        "0"
+      ],
+      "formnames": [
+        "user",
+        "field",
+        "fieldvalue"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "shop",
+      "guid": "8124eeb2-6a86-4742-bdda-cc9c2d1c1c3a",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "ca24883a-a95c-47dc-87d2-50c07aa95afd"
+          ]
+        }
+      ],
+      "x": 1493,
+      "y": 419
+    },
+    {
+      "type": "response",
+      "name": "sendShop",
+      "guid": "ca24883a-a95c-47dc-87d2-50c07aa95afd",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "8124eeb2-6a86-4742-bdda-cc9c2d1c1c3a"
+        }
+      ],
+      "x": 1661,
+      "y": 406,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "FFFFFF",
+        "Temporary Role Shop",
+        "",
+        "Minigames",
+        "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
+        "",
+        "Commands \".buy <rolenames>\"\n\nAvailable Roles:\n\nGODLIKE - (Rp.1000000)\nHYPER - (Rp.25000)\nDAMN DANIEL - (Rp.5000)\nBOOMER - (Rp.100)\n\n",
+        "",
+        "",
+        "requested by ${dbsVars.CommandAuthor.user.tag}",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "buy",
+      "guid": "63a6b14b-98de-4c97-bac6-39cb11a0644d",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "07b4219c-bb29-4fb9-89a2-feff35c5c1e2"
+          ]
+        }
+      ],
+      "x": 1502,
+      "y": 539
+    },
+    {
+      "type": "response",
+      "name": "buyst",
+      "guid": "07b4219c-bb29-4fb9-89a2-feff35c5c1e2",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "product",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "aced32dc-f758-4c58-a17d-16f3964fa25b"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "63a6b14b-98de-4c97-bac6-39cb11a0644d"
+        }
+      ],
+      "x": 1669,
+      "y": 535,
+      "rtype": "Variable",
+      "rsubtype": "Store Value in Variable",
+      "formdata": [
+        "product",
+        "Text",
+        "temp",
+        "0"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType",
+        "param"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "shopcsv",
+      "guid": "aced32dc-f758-4c58-a17d-16f3964fa25b",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "row is found",
+          "connections": [
+            "822fecd2-4f86-4893-8286-23f9ca1af989"
+          ]
+        },
+        {
+          "label": "row not found",
+          "connections": [
+            "b17f7d22-da30-4e6f-a8ee-3d2271318aad"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "07b4219c-bb29-4fb9-89a2-feff35c5c1e2"
+        }
+      ],
+      "x": 1830,
+      "y": 535,
+      "rtype": "Spreadsheet",
+      "rsubtype": "Get Row",
+      "formdata": [
+        "shop.csv",
+        "Product",
+        "${tempVars.product}",
+        "role",
+        "temp"
+      ],
+      "formnames": [
+        "selectedsheet",
+        "colheader",
+        "colval",
+        "rowvariable",
+        "saveVarType"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "errormsg",
+      "guid": "b17f7d22-da30-4e6f-a8ee-3d2271318aad",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "aced32dc-f758-4c58-a17d-16f3964fa25b"
+        }
+      ],
+      "x": 1672,
+      "y": 648,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "FF0000",
+        "Error",
+        "",
+        "Minigames",
+        "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
+        "",
+        "Parameter tidak ditemukan!",
+        "",
+        "",
+        "requested by ${dbsVars.CommandAuthor.user.tag}",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "checkmoney",
+      "guid": "822fecd2-4f86-4893-8286-23f9ca1af989",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "true",
+          "connections": [
+            "a1888025-090a-4089-8482-0fe6df816113"
+          ]
+        },
+        {
+          "label": "false",
+          "connections": [
+            "74aa7015-046c-4a83-a152-31178761d17c"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "aced32dc-f758-4c58-a17d-16f3964fa25b"
+        }
+      ],
+      "x": 1989,
+      "y": 534,
+      "rtype": "User Data",
+      "rsubtype": "Check User Data",
+      "formdata": [
+        "${dbsVars.CommandAuthor.id}",
+        "wallet",
+        "less than",
+        "${tempVars.role.Price}"
+      ],
+      "formnames": [
+        "user",
+        "field",
+        "compare",
+        "value"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "errormsg2",
+      "guid": "a1888025-090a-4089-8482-0fe6df816113",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "822fecd2-4f86-4893-8286-23f9ca1af989"
+        }
+      ],
+      "x": 1830,
+      "y": 682,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "FF0000",
+        "Error",
+        "",
+        "Minigames",
+        "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
+        "",
+        "Kamu tidak memiliki cukup uang untuk membeli role ini!",
+        "",
+        "",
+        "requested by ${dbsVars.CommandAuthor.user.tag}",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "editprice",
+      "guid": "74aa7015-046c-4a83-a152-31178761d17c",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "c9b1aaa9-e193-4a1c-83cb-175a50b5a46e"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "822fecd2-4f86-4893-8286-23f9ca1af989"
+        }
+      ],
+      "x": 1994,
+      "y": 681,
+      "rtype": "User Data",
+      "rsubtype": "Edit User Data",
+      "formdata": [
+        "${dbsVars.CommandAuthor.id}",
+        "wallet",
+        "-",
+        "${tempVars.role.Price}"
+      ],
+      "formnames": [
+        "user",
+        "field",
+        "oper",
+        "value"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "add role",
+      "guid": "c9b1aaa9-e193-4a1c-83cb-175a50b5a46e",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "c7f070f4-a468-4dbb-9fce-6b5e1b57aff5"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "74aa7015-046c-4a83-a152-31178761d17c"
+        }
+      ],
+      "x": 2144,
+      "y": 535,
+      "rtype": "User Action",
+      "rsubtype": "Add Role to User",
+      "formdata": [
+        "${dbsVars.CommandAuthor.id}",
+        "${tempVars.role.Product}"
+      ],
+      "formnames": [
+        "user",
+        "roleName"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "errormsg3",
+      "guid": "c7f070f4-a468-4dbb-9fce-6b5e1b57aff5",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "c9b1aaa9-e193-4a1c-83cb-175a50b5a46e"
+        }
+      ],
+      "x": 2151,
+      "y": 645,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "1BFF00",
+        "Success",
+        "",
+        "Minigames",
+        "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
+        "",
+        "Kamu berhasil membeli role ${tempVars.role.Product}",
+        "",
+        "",
+        "requested by ${dbsVars.CommandAuthor.user.tag}",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "add",
+      "guid": "66d7e4ca-c677-4bd7-ba01-e4aac3ca59ac",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "427b4cfe-0d52-4a09-9175-927bd1fd0bdb"
+          ]
+        }
+      ],
+      "x": 1638,
+      "y": 843,
+      "perms": []
+    },
+    {
+      "type": "response",
+      "name": "get user to add",
+      "guid": "427b4cfe-0d52-4a09-9175-927bd1fd0bdb",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "b9e1db3a-b5e5-4843-9bfe-004a9f7b732c"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "66d7e4ca-c677-4bd7-ba01-e4aac3ca59ac"
+        }
+      ],
+      "x": 1812,
+      "y": 836,
+      "rtype": "Variable",
+      "rsubtype": "Get Mentioned User",
+      "formdata": [
+        "useradd",
+        "User",
+        "temp"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "ammount to add",
+      "guid": "b9e1db3a-b5e5-4843-9bfe-004a9f7b732c",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "addamount",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "c4889284-8102-4bd9-835e-8b4226832a8d"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "427b4cfe-0d52-4a09-9175-927bd1fd0bdb"
+        }
+      ],
+      "x": 1967,
+      "y": 974,
+      "rtype": "Variable",
+      "rsubtype": "Store Value in Variable",
+      "formdata": [
+        "addamount",
+        "Number",
+        "temp",
+        "2"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType",
+        "param"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "check if add to wallet or bank",
+      "guid": "c4889284-8102-4bd9-835e-8b4226832a8d",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "addtype",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "ffd2b6d1-2cf8-45b0-a4fd-3137a37cec97"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "b9e1db3a-b5e5-4843-9bfe-004a9f7b732c"
+        }
+      ],
+      "x": 1969,
+      "y": 832,
+      "rtype": "Variable",
+      "rsubtype": "Store Value in Variable",
+      "formdata": [
+        "addtype",
+        "Text",
+        "temp",
+        "3"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType",
+        "param"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "check if wallet",
+      "guid": "ffd2b6d1-2cf8-45b0-a4fd-3137a37cec97",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "true",
+          "connections": [
+            "80ec71af-59e7-4954-a408-aa38a7930f57"
+          ]
+        },
+        {
+          "label": "false",
+          "connections": [
+            "9570ceea-0047-48f5-b275-bde82fce4a6b"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "c4889284-8102-4bd9-835e-8b4226832a8d"
+        }
+      ],
+      "x": 2128,
+      "y": 827,
+      "rtype": "Variable",
+      "rsubtype": "Check Variable Value",
+      "formdata": [
+        "addtype",
+        "temp",
+        "equal to",
+        "wallet"
+      ],
+      "formnames": [
+        "varname",
+        "saveVarType",
+        "compare",
+        "value"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "check if bank",
+      "guid": "9570ceea-0047-48f5-b275-bde82fce4a6b",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "true",
+          "connections": [
+            "decdf208-ade7-40cc-ad39-56cab71f02f6"
+          ]
+        },
+        {
+          "label": "false",
+          "connections": [
+            "6b3c384a-8890-4560-825e-a870260dbbf0"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "ffd2b6d1-2cf8-45b0-a4fd-3137a37cec97"
+        }
+      ],
+      "x": 2124,
+      "y": 975,
+      "rtype": "Variable",
+      "rsubtype": "Check Variable Value",
+      "formdata": [
+        "addtype",
+        "temp",
+        "equal to",
+        "bank"
+      ],
+      "formnames": [
+        "varname",
+        "saveVarType",
+        "compare",
+        "value"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "add to user",
+      "guid": "80ec71af-59e7-4954-a408-aa38a7930f57",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "0cbfa735-0696-4d09-adc1-d34d2aafba45"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "ffd2b6d1-2cf8-45b0-a4fd-3137a37cec97"
+        }
+      ],
+      "x": 2293,
+      "y": 826,
+      "rtype": "User Data",
+      "rsubtype": "Edit User Data",
+      "formdata": [
+        "${dbsVars.CommandAuthor.id}",
+        "wallet",
+        "+",
+        "${tempVars.addamount}"
+      ],
+      "formnames": [
+        "user",
+        "field",
+        "oper",
+        "value"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "add to bank",
+      "guid": "decdf208-ade7-40cc-ad39-56cab71f02f6",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "ff0fc3e5-0a37-4293-8339-e8efa974cc3f"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "9570ceea-0047-48f5-b275-bde82fce4a6b"
+        }
+      ],
+      "x": 2291,
+      "y": 955,
+      "rtype": "User Data",
+      "rsubtype": "Edit User Data",
+      "formdata": [
+        "${tempVars.useradd.id}",
+        "bank",
+        "+",
+        "${tempVars.addamount}"
+      ],
+      "formnames": [
+        "user",
+        "field",
+        "oper",
+        "value"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "not especified",
+      "guid": "6b3c384a-8890-4560-825e-a870260dbbf0",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "9570ceea-0047-48f5-b275-bde82fce4a6b"
+        }
+      ],
+      "x": 1810,
+      "y": 951,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "FF0000",
+        "Error",
+        "",
+        "Minigames",
+        "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
+        "",
+        "Wrong prefix!",
+        "",
+        "",
+        "requested by ${dbsVars.CommandAuthor.id}",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "add wallet correct",
+      "guid": "0cbfa735-0696-4d09-adc1-d34d2aafba45",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "80ec71af-59e7-4954-a408-aa38a7930f57"
+        }
+      ],
+      "x": 2449,
+      "y": 820,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "2CFF00",
+        "",
+        "",
+        "Minigames",
+        "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
+        "",
+        "Kamu menambah uang sebanyak Rp ${tempVars.addamount} ke akun <@${tempVars.useradd.id}>",
+        "",
+        "",
+        "requested by ${dbsVars.CommandAuthor.user.tag}",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "add bank correct",
+      "guid": "ff0fc3e5-0a37-4293-8339-e8efa974cc3f",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "decdf208-ade7-40cc-ad39-56cab71f02f6"
+        }
+      ],
+      "x": 2450,
+      "y": 954,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "0AFF00",
+        "Minigames",
+        "",
+        "Minigames",
+        "https://cdn.discordapp.com/icons/476039855441313794/e0f73fc4be44eda2c928d92eedfb1bdc.png?size=256",
+        "",
+        "Kamu menambah uang sebanyak Rp ${tempVars.addamount} ke akun <@${tempVars.useradd.id}>",
+        "",
+        "",
+        "requested by ${dbsVars.CommandAuthor.id}",
         "BOOL_TRUE@@",
         "",
         "temp"
